@@ -3,7 +3,7 @@
 <body>
   <script>
     var xhr = new XMLHttpRequest()
-    xhr.open('GET','/neteasemusic/cate.json')
+    xhr.open('GET','/neteasemusic/cate.json',true)
     xhr.send()
     xhr.onload = function(){
       console.log(JSON.parse(xhr.responseText))
